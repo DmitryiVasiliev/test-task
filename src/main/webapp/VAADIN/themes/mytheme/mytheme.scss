@@ -1,0 +1,112 @@
+@import "../valo/valo.scss";
+
+@mixin mytheme {
+  @include valo;
+
+  .header-layout {
+    width: 98%;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    background: white;
+  }
+  .view-layout {
+    width: 98%;
+    height: 90%;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    background: white;
+  }
+  .main-layout {
+    height: 100%;
+    background: #F4F4F4;
+  }
+
+  .v-button {
+    display: inline-block;
+    background-color: black;
+    border: none;
+    color: #BDBDBD;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+    width: 130px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 10px;
+  }
+  .button {
+    margin-left: 90px;
+  }
+  .buttoncontrl {
+    margin-left: 160px;
+    margin-top: 160px;
+    width: 230px;
+
+  }
+  .buttoncontrl2 {
+    margin-left: 160px;
+    margin-top: 20px;
+    width: 230px;
+
+  }
+
+  .v-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  .v-button span:after {
+    content: '\00bb';
+    color: #486CFB;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -10px;
+    transition: 0.5s;
+  }
+
+  .v-button:hover span {
+    color: #486CFB;
+    padding-right: 15px;
+  }
+
+  .v-button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  .v-table {
+    margin-top: 20px;
+    margin-left: 40px;
+
+  }
+  .tableb {
+    height: 540px;
+  }
+
+  .vertical-table {
+    width: 70%;
+  }
+  .horizontal-layout {
+    width: 100%;
+  }
+  .v-textfield {
+    margin: 10px;
+  }
+  .v-label {
+    margin: 15px;
+  }
+
+  .v-image {
+    margin-left: 170px;
+    margin-top: 120px;
+  }
+
+  .combobox {
+    margin: 10px;
+  }
+
+}

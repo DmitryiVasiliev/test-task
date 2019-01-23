@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS BOOK(
+ book_id NUMERIC IDENTITY PRIMARY KEY,
+ title VARCHAR(255),
+ author_id NUMERIC ,
+ genre_id NUMERIC,
+ publisher VARCHAR(255),
+ year VARCHAR(255),
+ city VARCHAR(255),
+ FOREIGN KEY (author_id) REFERENCES AUTHOR(author_id),
+ FOREIGN KEY (genre_id) REFERENCES GENRE(genre_id)
+);

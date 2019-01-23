@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS AUTHOR(
+ author_id NUMERIC IDENTITY PRIMARY KEY,
+ name VARCHAR(255),
+ middlename VARCHAR(255),
+ surname VARCHAR(255)
+);
+
+
+
